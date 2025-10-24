@@ -1,6 +1,7 @@
 # Exercise 01: Measuring Memory Bandwidth
 
 ## Setup
+Docker image: `rocm/vllm-dev:nightly_main_20251019`
 
 ```bash
 python3 test_pa_v1.py
