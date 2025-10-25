@@ -4,11 +4,12 @@ from torch import Tensor
 __all__ = ["mymuladd", "myadd_out"]
 
 
+# TODO: Wrapper function for the custom C++ op (But I already did it for you)
 def mymuladd(a: Tensor, b: Tensor, c: float) -> Tensor:
     """Performs a * b + c in an efficient fused kernel"""
     return torch.ops.extension_cpp.mymuladd.default(a, b, c)
 
-
+# NOTE: The below code is only for reference.
 # Registers a FakeTensor kernel (aka "meta kernel", "abstract impl")
 # that describes what the properties of the output Tensor are given
 # the properties of the input Tensor. The FakeTensor kernel is necessary

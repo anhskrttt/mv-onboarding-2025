@@ -1,7 +1,9 @@
 import torch
 import time
 
-# TODO(Step 5): import your custom C++ extension module here
+# [Optional] TODO(Step 5): import your custom C++ extension module here
+# This is only needed if you use wrapper function (e.g. extension_cpp.ops.<your_op_name>), or else, just simply use torch.ops.<your_op_name> and you don't need this import
+# NOTE: It's more common to use wrapper function
 # import <package_name>
 
 def reference_muladd(a, b, c):

@@ -53,7 +53,7 @@ def get_extensions():
         extension(
             f"{library_name}._C",
             sources=[
-                "extension_cpp/csrc/hip/muladd.cpp",
+                "extension_cpp/csrc/muladd.cpp", # CPU implementation
                 # TODO(Step 2): Add HIP source files here
                 
             ],
